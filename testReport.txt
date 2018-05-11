@@ -1,0 +1,100 @@
+
+Test Case #1:
+
+Scenario :  	1. Registering a user
+Verdict :	Message displayed 'Registration Successful!' and username is listed on database.
+Result :	Passed!
+
+
+Test Case #2:
+
+Scenario : 	1. Login a registered user
+Verdict :	UserPortal window opened with all gui and list of files and no change is noticed in the state of database
+Result	:	Passed!
+
+Test Case #3:
+
+Scenario :	1. Registering a registered user
+Verdict :	Message displayed 'User exists' and no change is noticed in the state of database.
+Result	:	Passed!
+
+Test Case #4:
+
+Scenario : 	1. Entering wrong password
+Verdict	:	Message displayed 'Invalid Password' and no change is noticed in the state of database.
+Result : 	Passed!
+
+Test Case #5:
+
+Scenario : 	1. Upload a text file on the behalf of user1 with some master password p1
+		2. Upload same text file on the behalf of another user user2 with some master password p2
+Verdict	:	File is uploaded successfully and reference is made for another user but seperate keys are stored in the database.
+Result	:	Passed!
+
+Test Case #6:
+
+Scenario :	1. Upload a text file file1 on the behalf of user1 with some master password p1
+		2. Upload same text file file1 on the behalf of user2 with some master password p2
+		3. Download file1 from the account of user1 and from account of user2
+Verdict	:	Both files were downloaded successfully and found same.
+Result	:	Passed!
+
+Test Case #7:
+
+Scenario : 	1. Upload a text file on the behalf of one user user1 with some master passsword p1
+		2. Upload same text file on the behalf of another user user2 with some master password p1
+Verdict :	References are made to the text file and seperate keys are stored on the account of user2 in database.		
+Result	:	Passed!
+
+Test Case #8:
+
+Scenario :	1. Upload a text file file1 on the behalf of one user user1 with some master password p1
+		2. Upload a text file file1 on the behalf of another user user2 with some master password p2
+		3. Download file1 from the account of user1 and user2.
+Verdict :	Both files were downloaded successfully and found same.
+Result	:	Passed!
+
+Test Case #9:
+
+Scenario :	1. Login into account of user user1
+		2. Reset server
+Verdict	: 	Message displayed on server 'Client logged in. Reset it later' and server is not reset.
+Result :	Passed!
+
+Test Case #10:
+
+Scenario : 	1. Upload a text file file1 two times on the behalf of user user1 with same master password.
+Verdict :	Second time file is not uploaded to the server.
+Result :	Passed!
+
+Test Case #11:
+
+Scenario : 	1. Upload a text file file1 two times on the behalf of user user1 with same master password.
+		2. Download the same file file1 twice.
+Verdict	:	File is shown only one time. File has been downloaded successfully.
+Result	:	Passed!	
+
+Test Case #12:
+
+Scenario : 	1. Upload a text file file1 two times on the behalf of user user1 with different master password.
+Verdict :	Second time file is not uploaded to the server.
+Result :	Passed!
+
+Test Case #13:
+
+Scenario :	1. Upload a text file file1 two times on the behalf of user user1 with different master password.
+		2. Download the same file twice.
+Verdict :	Second time file is not uploaded to the server.First file is downloaded successfully.
+Result :	Passed!
+
+
+Test Case #14:
+
+Scenario : 	Upload a pdf file on the behalf of user user1.
+
+Verdict	:	File uploaded successfully to the server and shown on the panel.
+Result	:	Passed!
+
+
+
+
